@@ -14,4 +14,14 @@ app.use('/courses', function (req,res){
   request(url).pipe(res)
 })
 
+app.use('/description', function (req,res){
+  const url = 'http://localhost:3001/description'
+  request(url).pipe(res)
+})
+
+app.use('/feedback', function (req,res){
+  const url = 'http://localhost:3002/feedback'
+  request(url).pipe(res)
+})
+
 app.listen(3000,()=> console.log(`listening on port ${3000}`))

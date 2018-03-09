@@ -1,15 +1,11 @@
-/*#iteminfo {
-  display: block;
+/*#payment {
+  position: sticky;
+  top:0;	
 }
-
-#countdown {
-  margin-left: 5px;
-  display: inline-block;
-}
-
-#related {
-  margin: 10%;
-  display: block;
-}
-
 */
+/*.info-body-main {
+  background-color:red;
+  position: sticky;
+  top:0;
+
+}*/
