@@ -14,7 +14,7 @@ app.get('/', function(req, res){
 
 app.use('/courses', function (req,res){
   const url = 'http://payment:3003/courses'
-  request(url).pipe(res)
+  request(url,{qs:req.query}).pipe(res)
 })
 
 app.use('/description', function (req,res){
@@ -24,7 +24,7 @@ app.use('/description', function (req,res){
 
 app.use('/feedback', function (req,res){
   const url = 'http://feedback:3002/feedback'
-  request(url).pipe(res)
+  request(url,{qs:req.query}).pipe(res)
 })
 
 app.use('/compare', function (req,res){
